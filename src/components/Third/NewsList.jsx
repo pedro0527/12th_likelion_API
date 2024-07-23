@@ -33,7 +33,7 @@ const NewsList = () => {
           <S.Button>경제</S.Button>
         </S.Select>
         {news.map((post) => (
-          <S.NewsWrapper key={post.urlToImage}>
+          <S.NewsWrapper key={post.url}>
             {post.urlToImage ? <S.Image src={post.urlToImage} /> : null}
             {post.title}
             {post.author}
